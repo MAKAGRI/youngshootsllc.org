@@ -3,71 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAR LAWN SERVICE L.L.C.</title>
+    <title>Young Shoots LLC | Avant-Garde Photographic Studio & Technical Imaging</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f8f8f8;
-            color: #333;
-        }
-        .header {
-            background: #2d6a4f;
-            color: #fff;
-            padding: 25px;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 30px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-        .contact {
-            margin-top: 30px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #2d6a4f;
-            color: #fff;
-            margin-top: 40px;
-        }
+        body { background-color: #fcfbfa; color: #1a1918; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; }
+        .font-serif-art { font-family: 'Instrument Serif', serif; }
+        .text-terracotta { color: #c85a32; }
+        .bg-terracotta { background-color: #c85a32; }
+        .border-terracotta-soft { border-color: rgba(200, 90, 50, 0.2); }
+        .bg-linen-dark { background-color: #141312; }
+        .bg-linen-light { background-color: #f5f2ee; }
+        .reveal { transition: all 1.6s cubic-bezier(0.16, 1, 0.3, 1); opacity: 0; transform: translateY(50px); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #fcfbfa; }
+        ::-webkit-scrollbar-thumb { background: #c85a32; }
     </style>
 </head>
-<body>
-    <div class="header">
-        <h1>VAR LAWN SERVICE L.L.C.</h1>
-    </div>
+<body class="antialiased">
 
-    <div class="container">
-        <p>VAR LAWN SERVICE L.L.C. is a professional lawn care and maintenance company based in Florida, offering a full range of services to keep your outdoor spaces healthy and beautiful all year round. We are committed to excellence and customer satisfaction in every project we handle.</p>
-
-        <h2>Our Address</h2>
-        <p>2921 NW 26th Street<br>
-        Fort Lauderdale, FL 33311<br>
-        United States</p>
-
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@varlawnservice.com">info@varlawnservice.com</a></p>
+    <!-- Minimal Gallery Navigation -->
+    <nav class="fixed w-full z-50 py-6 px-6 md:px-16 bg-[#fcfbfa]/80 backdrop-blur-md border-b border-zinc-200/60">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="font-serif-art text-2xl md:text-3xl tracking-tight text-[#1a1918]">
+                young <span class="italic text-terracotta">shoots.</span>
+            </div>
+            <div class="hidden lg:flex space-x-12 text-[11px] font-medium tracking-[0.2em] uppercase text-zinc-500">
+                <a href="#curation" class="hover:text-terracotta transition">The Curation</a>
+                <a href="#studios" class="hover:text-terracotta transition">Studio Grid</a>
+                <a href="#governance" class="hover:text-terracotta transition">Data Shield</a>
+                <a href="#contact" class="text-[#1a1918] border-b border-[#1a1918] pb-1 hover:text-terracotta hover:border-terracotta transition tracking-normal normal-case font-semibold text-xs">Book Session</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <footer>
-        &copy; 2025 VAR LAWN SERVICE L.L.C. All rights reserved.
+    <!-- Phase 1: Artistic Studio High-Contrast Opening -->
+    <section class="min-h-screen flex items-center justify-center relative px-6 bg-linen-light pt-20">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center w-full">
+            <div class="lg:col-span-7 text-left z-10">
+                <span class="text-terracotta font-mono tracking-[0.3em] text-[10px] uppercase mb-6 block">// PORTRAIT ARCHITECTURE & SCIENTIFIC CAPTURE</span>
+                <h1 class="font-serif-art text-6xl md:text-9xl text-[#1a1918] leading-[0.9] tracking-tight mb-8">
+                    Capturing <br><span class="italic font-light text-zinc-400">Raw Human</span> <br><span class="text-terracotta">Geometry.</span>
+                </h1>
+                <p class="text-zinc-600 text-sm md:text-base max-w-xl leading-relaxed font-light mb-10">
+                    High-end technical photography, modern portrait frameworks, and bespoke light manipulation services operating out of Dallas, Oregon.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5">
+                    <a href="#studios" class="bg-terracotta text-white font-medium text-xs tracking-widest uppercase px-8 py-4 hover:bg-[#141312] transition duration-300 shadow-md shadow-terracotta/10 text-center">Explore Creative Matrix</a>
+                    <a href="tel:19853431717" class="text-[#1a1918] font-mono text-xs border border-zinc-300 bg-white px-8 py-4 hover:bg-zinc-50 transition duration-300 text-center">+1 985-343-1717</a>
+                </div>
+            </div>
+            <!-- Large High-Fashion Vertical Image Frame -->
+            <div class="lg:col-span-5 relative h-[65vh] lg:h-[75vh] w-full bg-zinc-300 overflow-hidden shadow-2xl">
+                <img src="https://images.pexels.com/photos/1578531/pexels-photo-1578531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter grayscale contrast-130 brightness-95 scale-105" alt="High Fashion Structural Editorial Portrait Profile">
+                <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm p-4 border-l-2 border-terracotta">
+                    <span class="text-[9px] font-mono block uppercase tracking-widest text-zinc-400">CURRENT BASE Node</span>
+                    <p class="text-xs font-bold text-[#1a1918] font-mono">Dallas, Oregon, USA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 2: The Curation Manifesto (Deep Scroll 1) -->
+    <section id="curation" class="py-48 px-6 md:px-12 bg-white border-b border-zinc-100">
+        <div class="max-w-5xl mx-auto text-center reveal">
+            <span class="text-terracotta font-mono tracking-widest text-xs uppercase block mb-6">01 // CREATIVE PHILOSOPHY</span>
+            <h2 class="font-serif-art text-4xl md:text-7xl text-[#1a1918] leading-tight max-w-4xl mx-auto mb-10">
+                "We document structural balance across industrial lenses, led by key principal Warren Mead."
+            </h2>
+            <div class="w-12 h-[1px] bg-terracotta mx-auto mb-10"></div>
+            <p class="text-zinc-500 leading-loose text-base font-light max-w-3xl mx-auto">
+                Young Shoots LLC isolates visual aesthetics with mathematical certainty. Operating out of our registered central facilities at 18799 Frost Rd Dallas, OR, our technical photography frameworks balance light refraction, high-contrast human alignment, and modern composition schemas to establish lasting commercial portfolios.
+            </p>
+        </div>
+    </section>
+
+    <!-- Phase 3: Technical Studio Production Grid (Deep Scroll 2) -->
+    <section id="studios" class="py-48 px-6 md:px-12 bg-linen-light">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-32 grid lg:grid-cols-2 gap-8 items-end reveal">
+                <div>
+                    <span class="text-terracotta font-mono uppercase tracking-[0.3em] text-[10px] block mb-3">02 // TECHNICAL DEPARTMENTS</span>
+                    <h2 class="font-serif-art text-5xl md:text-7xl text-[#1a1918] tracking-tight leading-none">STUDIO VECTORS</h2>
+                </div>
+                <p class="text-zinc-500 font-light text-sm max-w-md pb-2">Advanced image production across photographic systems, custom portrait captures, and digital archiving layouts.</p>
+            </div>
+
+            <!-- Brutalist Fine Art Grid Layout -->
+            <div class="grid lg:grid-cols-3 gap-12">
+                <!-- Vector 1 -->
+                <div class="flex flex-col reveal">
+                    <div class="overflow-hidden mb-6 h-[400px] bg-zinc-200 shadow-sm relative group">
+                        <img src="https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter grayscale contrast-115 group-hover:scale-105 transition duration-700" alt="Bespoke Studio Flash Lighting Equipment Setup">
+                        <div class="absolute inset-0 bg-terracotta/10 mix-blend-multiply"></div>
+                    </div>
+                    <span class="text-terracotta font-mono text-xs mb-2">[ VECTOR 01 ]</span>
+                    <h3 class="font-serif-art text-3xl text-[#1a1918] font-bold mb-3">Portrait Architecture</h3>
+                    <p class="text-zinc-500 text-xs leading-relaxed font-light">Custom commercial headshots, modern editorial lookbooks, and private human captures customized for high-profile profiles.</p>
+                </div>
+
+                <!-- Vector 2 -->
+                <div class="flex flex-col reveal lg:translate-y-16">
+                    <div class="overflow-hidden mb-6 h-[400px] bg-zinc-200 shadow-sm relative group">
+                        <img src="https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter grayscale contrast-125 group-hover:scale-105 transition duration-700" alt="Artistic Dark Room Image Chemical Development Close Up">
+                        <div class="absolute inset-0 bg-zinc-900/10 mix-blend-overlay"></div>
+                    </div>
+                    <span class="text-terracotta font-mono text-xs mb-2">[ VECTOR 02 ]</span>
+                    <h3 class="font-serif-art text-3xl text-[#1a1918] font-bold mb-3">Scientific Image Processing</h3>
+                    <p class="text-zinc-500 text-xs leading-relaxed font-light">Advanced lighting calculation setups, architectural mapping, and high-fidelity scientific scans for technical records.</p>
+                </div>
+
+                <!-- Vector 3 -->
+                <div class="flex flex-col reveal">
+                    <div class="overflow-hidden mb-6 h-[400px] bg-zinc-200 shadow-sm relative group">
+                        <img src="https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="w-full h-full object-cover filter grayscale contrast-110 group-hover:scale-105 transition duration-700" alt="Minimal Geometric Concrete Architecture Lines">
+                        <div class="absolute inset-0 bg-terracotta/10 mix-blend-color-burn"></div>
+                    </div>
+                    <span class="text-terracotta font-mono text-xs mb-2">[ VECTOR 03 ]</span>
+                    <h3 class="font-serif-art text-3xl text-[#1a1918] font-bold mb-3">Editorial Spaces</h3>
+                    <p class="text-zinc-500 text-xs leading-relaxed font-light">Environmental site tracking, corporate interior setups, and commercial asset catalog design frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 4: Full Contrast Negative Horizon (Deep Scroll 3) -->
+    <section class="h-[80vh] relative overflow-hidden bg-linen-dark">
+        <img src="https://images.pexels.com/photos/3378993/pexels-photo-3378993.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2" class="absolute inset-0 w-full h-full object-cover opacity-10 filter grayscale contrast-150" alt="Abstract Light Refraction Lens Flare Architecture Pattern">
+        <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+            <div class="max-w-3xl reveal">
+                <span class="text-terracotta font-mono text-xs tracking-[0.4em] uppercase block mb-6">THE OPTICAL EQUILIBRIUM</span>
+                <h3 class="font-serif-art text-4xl md:text-6xl text-zinc-200 font-light leading-tight tracking-wide">
+                    "Light is not purely a tool; it is the structural glue that defines physical geometry."
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 5: Artistic Security Architecture & Compliance Ledger -->
+    <section id="governance" class="py-44 px-6 md:px-12 bg-white">
+        <div class="max-w-4xl mx-auto bg-linen-light border border-zinc-200 p-8 md:p-16 rounded-none reveal">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-10 pb-6 border-b border-zinc-300">
+                <div>
+                    <h2 class="font-serif-art text-3xl text-[#1a1918] tracking-tight">Image Ledger Protection Mandate</h2>
+                    <p class="text-zinc-400 font-mono text-[9px] uppercase tracking-widest mt-1">Creative Identity Vault Protocol</p>
+                </div>
+                <div class="mt-4 sm:mt-0 text-[10px] font-mono font-bold text-terracotta border border-terracotta-soft px-4 py-2 bg-terracotta/5 tracking-widest">ENCRYPT BUFFER // JUN 2026</div>
+            </div>
+            <div class="h-56 overflow-y-scroll pr-4 text-xs font-mono tracking-wide leading-loose text-zinc-500">
+                <p class="text-zinc-700 font-bold mb-4">REGULATORY SCHEMA IN MOTION: JUNE 2026</p>
+                <p class="mb-4">Young Shoots LLC ("The Studio Entity") deploys strict operational filters to completely shield visual raw data files, digital ownership credentials, and commercial logs in complete accordance with Oregon regional business privacy guidelines.</p>
+                
+                <h4 class="text-[#1a1918] font-bold mt-6 mb-2">Alpha: Transmission Containment</h4>
+                <p class="mb-4">Any creative brief or communication routed via digital mailpoints (contact@youngshootsllc.org) or public dial conduits (+1 985-343-1717) is isolated on encrypted servers to ensure portfolio anonymity.</p>
+                
+                <h4 class="text-[#1a1918] font-bold mt-6 mb-2">Beta: Negative Layer Encryption</h4>
+                <p class="mb-4">Unreleased raw images, face identification vectors, and portrait assets are maintained behind secure hardware arrays to completely guard corporate copyright positions.</p>
+                
+                <h4 class="text-[#1a1918] font-bold mt-6 mb-2">Gamma: Legal Bounds</h4>
+                <p>All photo shoots, creative assignments, and contract arrangements are executed under the local guidelines of Dallas, Oregon, United States.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phase 6: Brutalist Minimalist Fine-Art Footer -->
+    <footer id="contact" class="py-32 px-6 md:px-12 bg-linen-dark text-zinc-400 border-t border-zinc-900">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="font-serif-art text-5xl md:text-7xl mb-12 text-white leading-none">INITIATE <br><span class="text-terracotta italic font-light">CAPTURE.</span></h2>
+                <div class="space-y-10">
+                    <div>
+                        <span class="text-zinc-600 font-mono text-[9px] tracking-widest block mb-2 uppercase">Creative Submission Portal</span>
+                        <a href="mailto:contact@youngshootsllc.org" class="text-xl md:text-2xl font-light text-zinc-200 hover:text-terracotta transition tracking-tight">contact@youngshootsllc.org</a>
+                    </div>
+                    <div>
+                        <span class="text-zinc-600 font-mono text-[9px] tracking-widest block mb-2 uppercase">Direct Production Line</span>
+                        <a href="tel:19853431717" class="text-xl md:text-2xl font-light text-zinc-200 hover:text-terracotta transition tracking-tight">+1 985-343-1717</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col justify-end items-start lg:items-end">
+                <span class="text-zinc-600 font-mono text-[9px] tracking-widest block mb-3 uppercase">Physical Gallery Node</span>
+                <p class="font-serif-art text-2xl md:text-3xl font-light leading-relaxed text-zinc-300 tracking-wide">
+                    18799 Frost Rd<br>
+                    Dallas, OR, 97338-9429<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-28 pt-10 border-t border-zinc-800 flex flex-col md:flex-row justify-between text-[9px] text-zinc-600 uppercase tracking-widest font-mono">
+            <p>&copy; 2026 YOUNG SHOOTS LLC. CAPTURE ARRAYS ONLINE.</p>
+            <p>REGISTRATION VERIFIED: DALLAS, OREGON, USA</p>
+        </div>
     </footer>
+
+    <script>
+        // High-End Linear Observation for Avant-Garde Structural Cards
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.04 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
